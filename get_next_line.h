@@ -4,12 +4,13 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-
-char    *get_next_line(int fd);
-size_t	ft_strlen(char *s);
-char    *ft_strjoin(char *s1, char *s2);
-int     is_return(char *s);
-char    *ft_strdup(const char *s);
-char    *ft_strchr(const char *s, int c);
+void	*ft_calloc(size_t count, size_t size);
+void	ft_bzero(void *s, size_t n);
+char	*get_next_line(int fd);
+size_t	ft_strlen(const char *s);
+char	*ft_strjoin(const char *s1, const char *s2);
+int	is_return(const char *s);
+char	*ft_strdup(const char *s);
+char	*ft_strchr(const char *s, int c);
 
 #endif
